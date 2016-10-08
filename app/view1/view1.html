@@ -1,0 +1,17 @@
+<div ng-controller="View1Ctrl">
+    <main class="events-list">
+        <div class="events-list">
+            <section class="events-list__item" ng-repeat="event in eventList track by $index">
+                <div class="events-list__title">{{ event.name }}</div>
+                <div class="events-list__time">{{ event.hour | date:'hh:mm' }}</div>
+                <div class="events-list__place">{{ event.place }}</div>
+                <div class="events-list__count"><p>{{ event.participants.length }}</p></div>
+                <div class="events-list__add"><p class="event-list__plus" ng-click="clickJoinEvent(event)">+</p></div>
+            </section>
+        </div>
+        <section>
+            <a href="#!/view2" class="events-list__bt-add">Dodaj event</a>
+        </section>
+    </main>
+</div>
+

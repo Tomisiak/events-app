@@ -1,0 +1,34 @@
+/* app css stylesheet */
+
+.menu {
+  background-color: #79bd9a;
+  list-style: none;
+  /*border-bottom: 0.1em solid black;*/
+  /*margin-bottom: 2em;*/
+  /*padding: 0 0.5em 0.5em;*/
+
+  height: 48px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu > li a {
+  text-decoration: none;
+  padding: 15px;
+  height:40px;
+  line-height:40px;
+}
+
+.menu > li a:hover {
+  background: #285943;
+  border-bottom: 4px solid #285943;
+}
+
+
+
+
+
+}

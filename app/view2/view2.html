@@ -1,0 +1,23 @@
+<main class="events-list">
+    <form>
+        <section class="create-event">
+
+            <div class="create-event__name">
+                <input class="create-event__input" type="text" ng-model="event.name"
+                       placeholder="Nazwa wydarzenia">
+            </div>
+            <div class="create-event__time">
+                <input class="create-event__input" type="time" ng-model="event.hour"
+                       placeholder="Czas">
+            </div>
+            <div class="create-event__place">
+                <input class="create-event__input" type="text" ng-model="event.place"
+                       placeholder="Miejsce">
+            </div>
+
+            <div class="create-event__add-bt">
+                <button type="button" ng-click="onSubmit(event)">Dodaj!</button>
+            </div>
+        </section>
+    </form>
+</main>
